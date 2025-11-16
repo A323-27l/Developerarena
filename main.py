@@ -10,6 +10,6 @@ def person_info():
     print(" " *10 + "Age :",  age)
     print(" " *10 + "City :", city)
     print(" " *10 + "Hobbies :",  hobbies)
-    print("*" * 10 + "END" + "*")
+    print("*" * 20 + "END" + "*" * 20)
 
 person_info()
