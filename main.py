@@ -1,17 +1,14 @@
-# This is a sample Python script.
+def person_info():
+    name = str(input("Enter name : ")).upper().strip()
+    age =  int(input("Enter age :"))
+    city= str(input("Enter city name :")).upper().strip()
+    hobbies = input("Enter Hobby (comma separate) :").upper().split(" ")
+    hobbies =  [hobby.strip() for hobby in hobbies]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    print("=" *10 + "PERSONAL INFORMATION DETAILS" + "=" * 10)
+    print(" " *10 + "Name :",  name)
+    print(" " *10 + "Age :",  age)
+    print(" " *10 + "City :", city)
+    print(" " *10 + "Hobbies :",  hobbies)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyChar')
-
-# See PyCharm help at https://www.jetbrains.com/help/pychar/
-
+person_info()
